@@ -1,3 +1,47 @@
+# elm parser sample
+
+## Math.elm
+
+```
+module Math exposing (..)
+
+import Run exposing (run)
+
+
+r = run "2+2"
+
+
+r2 = run "2 * 4 "
+r3 = run "if True && False then 1 else 2"
+
+
+```
+
+## elm repl
+
+```
+gusa1120@gsub:~/Elm/elm-stlc$ cd src/elm/
+gusa1120@gsub:~/Elm/elm-stlc/src/elm$ 
+gusa1120@gsub:~/Elm/elm-stlc/src/elm$ elm repl
+---- Elm 0.19.1 ----------------------------------------------------------------
+Say :help for help and :exit to exit! More at <https://elm-lang.org/0.19.1/repl>
+--------------------------------------------------------------------------------
+> import Math exposing (..)
+> r2
+"8 : Int" : String
+> r3
+"2 : Int" : String
+> 
+
+```
+
+
+
+
+
+
+
+
 # Elm Simply Typed Lambda Calculus
 
 This is a simple implementation of a little Simply Typed Lambda Calculus.
